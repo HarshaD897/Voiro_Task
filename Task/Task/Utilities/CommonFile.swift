@@ -10,6 +10,7 @@ import UIKit
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
+let baseUrlForImage = "https://image.tmdb.org/t/p"
 
 class Utilitys: NSObject {
     static func navigatedView(bundle:String,identifier:String) -> UIViewController? {

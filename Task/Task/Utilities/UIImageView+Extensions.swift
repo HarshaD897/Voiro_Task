@@ -71,7 +71,7 @@ extension UIImageView {
                       return
                     }
                     
-                    self.image = UIImage(named: "defaultGrey")
+                    self.image = UIImage(named: "image")
                     if let completion = downloadComplete {
                         completion()
                     }
@@ -79,7 +79,7 @@ extension UIImageView {
             }
             return
         }
-        self.image = UIImage(named: "defaultGrey")
+        self.image = UIImage(named: "image")
         if let completion = downloadComplete {
             completion()
         }

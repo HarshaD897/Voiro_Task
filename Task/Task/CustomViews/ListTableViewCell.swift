@@ -25,8 +25,17 @@ class ListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func dataUpdate(list: ResultList) {
-        
+    func dataUpdate(data: MovieList) {
+        titleLabel.text = data.title
+        ratingLabel.text = data.voteAverage?.description
+    
+        if let postalPath = data.posterPath {
+            let finalUrl = baseUrlForImage + postalPath
+            profileImageView.downloadImage(url: finalUrl) {
+                print("Image Downloaded Successfully: \(finalUrl)")
+            }
+        }
+       
     }
     
 }
