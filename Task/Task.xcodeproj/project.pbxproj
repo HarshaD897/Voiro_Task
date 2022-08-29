@@ -16,6 +16,13 @@
 		F885B2C028BCBDED0030C3B3 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2BF28BCBDED0030C3B3 /* TaskTests.swift */; };
 		F885B2CA28BCBDED0030C3B3 /* TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2C928BCBDED0030C3B3 /* TaskUITests.swift */; };
 		F885B2CC28BCBDED0030C3B3 /* TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2CB28BCBDED0030C3B3 /* TaskUITestsLaunchTests.swift */; };
+		F885B2DD28BCC0BA0030C3B3 /* FilePathHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2D928BCC0BA0030C3B3 /* FilePathHandler.swift */; };
+		F885B2DE28BCC0BA0030C3B3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2DA28BCC0BA0030C3B3 /* UIImageView+Extensions.swift */; };
+		F885B2DF28BCC0BA0030C3B3 /* CommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2DB28BCC0BA0030C3B3 /* CommonFile.swift */; };
+		F885B2E028BCC0BA0030C3B3 /* ReachabilityFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2DC28BCC0BA0030C3B3 /* ReachabilityFile.swift */; };
+		F885B2E528BCC1130030C3B3 /* MyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2E228BCC1130030C3B3 /* MyIndicator.swift */; };
+		F885B2E628BCC1130030C3B3 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885B2E328BCC1130030C3B3 /* ListTableViewCell.swift */; };
+		F885B2E728BCC1130030C3B3 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F885B2E428BCC1130030C3B3 /* ListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		F885B2C528BCBDED0030C3B3 /* TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F885B2C928BCBDED0030C3B3 /* TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITests.swift; sourceTree = "<group>"; };
 		F885B2CB28BCBDED0030C3B3 /* TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F885B2D928BCC0BA0030C3B3 /* FilePathHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePathHandler.swift; sourceTree = "<group>"; };
+		F885B2DA28BCC0BA0030C3B3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		F885B2DB28BCC0BA0030C3B3 /* CommonFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFile.swift; sourceTree = "<group>"; };
+		F885B2DC28BCC0BA0030C3B3 /* ReachabilityFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityFile.swift; sourceTree = "<group>"; };
+		F885B2E228BCC1130030C3B3 /* MyIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyIndicator.swift; sourceTree = "<group>"; };
+		F885B2E328BCC1130030C3B3 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		F885B2E428BCC1130030C3B3 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,8 @@
 				F885B2A828BCBDEC0030C3B3 /* AppDelegate.swift */,
 				F885B2AA28BCBDEC0030C3B3 /* SceneDelegate.swift */,
 				F885B2AC28BCBDEC0030C3B3 /* ViewController.swift */,
+				F885B2E128BCC1130030C3B3 /* CustomViews */,
+				F885B2D828BCC0BA0030C3B3 /* Utilities */,
 				F885B2AE28BCBDEC0030C3B3 /* Main.storyboard */,
 				F885B2B128BCBDED0030C3B3 /* Assets.xcassets */,
 				F885B2B328BCBDED0030C3B3 /* LaunchScreen.storyboard */,
@@ -125,6 +141,27 @@
 				F885B2CB28BCBDED0030C3B3 /* TaskUITestsLaunchTests.swift */,
 			);
 			path = TaskUITests;
+			sourceTree = "<group>";
+		};
+		F885B2D828BCC0BA0030C3B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F885B2D928BCC0BA0030C3B3 /* FilePathHandler.swift */,
+				F885B2DA28BCC0BA0030C3B3 /* UIImageView+Extensions.swift */,
+				F885B2DB28BCC0BA0030C3B3 /* CommonFile.swift */,
+				F885B2DC28BCC0BA0030C3B3 /* ReachabilityFile.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F885B2E128BCC1130030C3B3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F885B2E228BCC1130030C3B3 /* MyIndicator.swift */,
+				F885B2E328BCC1130030C3B3 /* ListTableViewCell.swift */,
+				F885B2E428BCC1130030C3B3 /* ListTableViewCell.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F885B2B528BCBDED0030C3B3 /* LaunchScreen.storyboard in Resources */,
+				F885B2E728BCC1130030C3B3 /* ListTableViewCell.xib in Resources */,
 				F885B2B228BCBDED0030C3B3 /* Assets.xcassets in Resources */,
 				F885B2B028BCBDEC0030C3B3 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F885B2DE28BCC0BA0030C3B3 /* UIImageView+Extensions.swift in Sources */,
 				F885B2AD28BCBDEC0030C3B3 /* ViewController.swift in Sources */,
+				F885B2E028BCC0BA0030C3B3 /* ReachabilityFile.swift in Sources */,
+				F885B2DF28BCC0BA0030C3B3 /* CommonFile.swift in Sources */,
 				F885B2A928BCBDEC0030C3B3 /* AppDelegate.swift in Sources */,
+				F885B2E628BCC1130030C3B3 /* ListTableViewCell.swift in Sources */,
 				F885B2AB28BCBDEC0030C3B3 /* SceneDelegate.swift in Sources */,
+				F885B2DD28BCC0BA0030C3B3 /* FilePathHandler.swift in Sources */,
+				F885B2E528BCC1130030C3B3 /* MyIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
