@@ -29,11 +29,9 @@ class ListTableViewCell: UITableViewCell {
         titleLabel.text = data.title
         ratingLabel.text = data.voteAverage?.description
     
-        if let postalPath = data.posterPath {
-            let finalUrl = baseUrlForImage + postalPath
-            profileImageView.downloadImage(url: finalUrl) {
-                print("Image Downloaded Successfully: \(finalUrl)")
-            }
+        let finalUrl = baseUrlForImage + data.posterPath
+        profileImageView.downloadImage(url: finalUrl) {
+            print("Image Downloaded Successfully: \(finalUrl)")
         }
        
     }

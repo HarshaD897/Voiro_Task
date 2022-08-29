@@ -17,27 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ut1-ka-0IP">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="AcK-D8-qRr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-T3-mrU">
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8W2-yL-mRS"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dU7-aL-i9D"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Vj2-rV-COH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yKh-3C-4Sb"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ut1-ka-0IP" secondAttribute="trailing" id="iT7-eF-Ogl"/>
-                            <constraint firstItem="Ut1-ka-0IP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nfv-8N-LM4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ut1-ka-0IP" secondAttribute="bottom" id="pt5-X1-LYi"/>
-                            <constraint firstItem="Ut1-ka-0IP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z0d-dN-f8S"/>
+                            <constraint firstItem="YY3-T3-mrU" firstAttribute="top" secondItem="AcK-D8-qRr" secondAttribute="bottom" id="6LJ-qH-Mw9"/>
+                            <constraint firstItem="AcK-D8-qRr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ahB-nN-S1M"/>
+                            <constraint firstItem="AcK-D8-qRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cA3-is-LXG"/>
+                            <constraint firstItem="YY3-T3-mrU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mdO-G7-8Wp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="AcK-D8-qRr" secondAttribute="top" id="o5l-1s-eKe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YY3-T3-mrU" secondAttribute="bottom" id="rgP-ek-Is7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YY3-T3-mrU" secondAttribute="trailing" id="skI-BG-34P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z8l-82-UR5"/>
                     <connections>
-                        <outlet property="listTableView" destination="Ut1-ka-0IP" id="EtP-QD-3Mz"/>
+                        <outlet property="listTableView" destination="YY3-T3-mrU" id="OH6-0y-cW1"/>
+                        <outlet property="searchBar" destination="AcK-D8-qRr" id="vcr-rY-T78"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

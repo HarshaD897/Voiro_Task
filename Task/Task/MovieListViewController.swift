@@ -8,13 +8,14 @@
 import UIKit
 
 class MovieListViewController: UIViewController {
-
+    
+    @IBOutlet var searchBar: UISearchBar!
     @IBOutlet weak var listTableView: UITableView!
     
     private lazy var viewModel: MovieListViewModel = {
         return MovieListViewModel()
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Movies"
@@ -32,6 +33,9 @@ class MovieListViewController: UIViewController {
         self.listTableView.register(UINib.init(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "SongList")
         self.listTableView.rowHeight = UITableView.automaticDimension
         self.listTableView.estimatedRowHeight = 120.0
+        
+        self.searchBar.delegate = self
+
     }
     
     //MARK: - Calling Service  Method
@@ -94,5 +98,19 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
             detailsView.selectedList = self.viewModel.movieListArray[indexPath.row]
             self.navigationController?.pushViewController(detailsView, animated: true)
         }
+    }
+}
+
+extension MovieListViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        self.viewModel.movieListArray = searchText.isEmpty ? viewModel.totalList : self.viewModel.totalList.filter { $0.title.lowercased().prefix(searchText.count) == searchText.lowercased() }
+        listTableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.viewModel.movieListArray = viewModel.totalList
+        listTableView.reloadData()
     }
 }
