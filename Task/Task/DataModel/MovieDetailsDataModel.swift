@@ -54,7 +54,7 @@ struct MovieDetails: Codable {
 // MARK: - BelongsToCollection
 struct BelongsToCollection: Codable {
     let id: Int
-    let name, posterPath, backdropPath: String
+    let name, posterPath, backdropPath: String?
 
     enum CodingKeys: String, CodingKey {
         case id, name
@@ -72,11 +72,10 @@ struct Genre: Codable {
 // MARK: - ProductionCompany
 struct ProductionCompany: Codable {
     let id: Int
-    let logoPath, name, originCountry: String
+    let name, originCountry: String?
 
     enum CodingKeys: String, CodingKey {
         case id
-        case logoPath = "logo_path"
         case name
         case originCountry = "origin_country"
     }

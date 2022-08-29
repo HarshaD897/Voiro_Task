@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F52617BB-2E19-4406-83E0-8198DC2A7FB6"
+            uuid = "06E56A16-FEA9-4073-B9A4-15DF0EFD48B2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Task/Utilities/UIImageView+Extensions.swift"
+            filePath = "Task/ViewModel/MovieDetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "downloadImage(url:downloadComplete:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3D190754-B7D4-40C7-AF22-3D871F1F22AB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Task/Utilities/UIImageView+Extensions.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "downloadImage(url:downloadComplete:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getMovieDetails(id:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

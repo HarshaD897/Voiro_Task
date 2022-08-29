@@ -90,10 +90,9 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let detailsView = Utilitys.navigatedView(bundle: "Main", identifier: "DetailsScreen") as? DetailsViewController {
-//            detailsView.songList = self.viewModel.songsListArray[indexPath.row]
-//            navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-//            self.navigationController?.pushViewController(detailsView, animated: true)
-//        }
+        if let detailsView = Utilitys.navigatedView(bundle: "Main", identifier: "MovieDetailsViewController") as? MovieDetailsViewController {
+            detailsView.selectedList = self.viewModel.movieListArray[indexPath.row]
+            self.navigationController?.pushViewController(detailsView, animated: true)
+        }
     }
 }
